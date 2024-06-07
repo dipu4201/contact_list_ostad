@@ -194,6 +194,7 @@ class _BodyPageState extends State<BodyPage> {
                 itemCount: contacts.length,
                 itemBuilder: (context, index) {
                   return ListTile(
+                    leading: Icon(Icons.person), // Person icon added here
                     title: Text(contacts[index]['name']!),
                     subtitle: Text(contacts[index]['number']!),
                     trailing: Row(
